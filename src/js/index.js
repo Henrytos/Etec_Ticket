@@ -25,6 +25,6 @@ document.getElementById('btn').addEventListener('click', (ev) => {
 
 })
 function render(name, rm) {
-    const person = namesStudents.find(ele => ele.name == name && ele.rm == rm)
+    const personStudnet = namesStudents.find(ele => ele.name == name && ele.rm == rm)
     console.log(person)
 }
