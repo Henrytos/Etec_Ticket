@@ -12,28 +12,55 @@ main {
   justify-content: center;
   width: 100vw;
   height: 100vh;
+  background-image: url("../src/assets/imgs/backgroudDescktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .formStudent {
-  width: 50vw;
+  width: 80vw;
   max-width: 500px;
   margin: auto;
   display: flex;
   flex-direction: column;
-  height: 350px;
-  gap: 10px;
+  height: auto;
+  gap: 5px;
   border: 2px solid black;
   border-radius: 10px;
   padding: 20px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .formStudent > #btn {
-  width: 100px;
-  border: none;
-  outline: none;
-  background-color: none;
-  font-size: 20px;
   cursor: pointer;
   margin: auto;
   transition: 0.5s all;
-  border: 1px solid black;
+  width: 110px;
   border-radius: 10px;
+  font-weight: bold;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+form > input {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 5px;
+  border-bottom: 2px solid black;
+}
+form > label {
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  main {
+    background-image: url("../src/assets/imgs/backgroudMobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .formStudent {
+    height: auto;
+  }
 }
