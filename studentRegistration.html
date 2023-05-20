@@ -19,30 +19,38 @@
       href="src/assets/imgs/ticketLogo.png"
       type="image/x-icon"
     />
-
+    <link rel="stylesheet" href="styles/resgister.css" />
     <title>cadastro de estudante</title>
   </head>
   <body>
-    <form action="" class="formStudentRegister" method="post">
-      <label for="nameStudent">Nome:</label>
-      <input type="text" name="nameStudent" id="nameStudent" required />
-      <label for="rmStudent">Rm:</label>
-      <input type="number" name="rmStudent" id="rmStudent" required />
-      <label for="passwordStudent">Senha:</label>
-      <input type="text" name="passwordStudent" id="passwordStudent" required />
-      <span class="buttons">
-        <button type="button" class="btn btn-outline-dark" id="btn btn-login">
-          Login
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-dark"
-          id="btn btn-cadastro"
-        >
-          <a href="studentRegistration.html">cadastro</a>
-        </button>
-      </span>
-    </form>
+    <main>
+      <form action="" class="formStudentRegister" method="post">
+        <img src="src/assets/imgs/logo Etec.png" alt="" />
+        <label for="nameStudent">Nome:</label>
+        <input type="text" name="nameStudent" id="nameStudent" required />
+        <br />
+        <label for="rmStudent">Rm:</label>
+        <input type="number" name="rmStudent" id="rmStudent" required />
+        <br />
+        <label for="passwordStudent">Senha:</label>
+        <input
+          type="text"
+          name="passwordStudent"
+          id="passwordStudent"
+          required
+        />
+        <br />
+        <span class="buttons">
+          <button
+            type="button"
+            class="btn btn-outline-dark"
+            id="btn btn-cadastro"
+          >
+            <a href="login.html">cadastrar</a>
+          </button>
+        </span>
+      </form>
+    </main>
 
     <!-- Bootstrap -->
     <script
