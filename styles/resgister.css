@@ -17,6 +17,10 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.title {
+  text-align: center;
+  font-weight: bolder;
+}
 /* formulario */
 .formStudentRegister {
   width: 80vw;
@@ -62,7 +66,7 @@ form > input {
 form > label {
   font-weight: bold;
 }
-/*Responsividade*/
+/*Responsividade mobile*/
 @media (max-width: 767px) {
   main {
     background-image: url("../src/assets/imgs/backgroudMobile.jpg");

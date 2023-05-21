@@ -17,6 +17,10 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.title {
+  text-align: center;
+  font-weight: bold;
+}
 /* formulario */
 .formStudent {
   width: 80vw;

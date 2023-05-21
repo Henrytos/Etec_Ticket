@@ -20,33 +20,45 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="styles/resgister.css" />
+
+    <script src="src/js/verificationPassword.js" defer type="module"></script>
     <title>cadastro de estudante</title>
   </head>
   <body>
     <main>
+      <!-- formulario de cadastro-->
       <form action="" class="formStudentRegister" method="post">
         <img src="src/assets/imgs/logo Etec.png" alt="" />
+        <h3 class="title">Cadastro De Aluno</h3>
         <label for="nameStudent">Nome:</label>
         <input type="text" name="nameStudent" id="nameStudent" required />
         <br />
+        <!-- RM do Estudante -->
         <label for="rmStudent">Rm:</label>
         <input type="number" name="rmStudent" id="rmStudent" required />
         <br />
+        <!-- senha do estudante -->
         <label for="passwordStudent">Senha:</label>
         <input
-          type="text"
+          type="password"
           name="passwordStudent"
           id="passwordStudent"
           required
         />
         <br />
+
+        <label for="confimationPasswordStudent">Confirmar Senha:</label>
+        <input
+          type="password"
+          name="confimationPasswordStudent"
+          id="confimationpasswordStudent"
+          required
+        />
+        <br />
+        <!-- Botão do cadastro -->
         <span class="buttons">
-          <button
-            type="button"
-            class="btn btn-outline-dark"
-            id="btn btn-cadastro"
-          >
-            <a href="login.html">cadastrar</a>
+          <button type="button" class="btn btn-outline-dark">
+            <a href="" id="buttonCadastro">cadastrar</a>
           </button>
         </span>
       </form>
