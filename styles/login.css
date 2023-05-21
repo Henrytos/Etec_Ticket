@@ -66,6 +66,16 @@ form > input {
 form > label {
   font-weight: bold;
 }
+label {
+  position: relative;
+}
+label > img {
+  width: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  bottom: -35px;
+}
 /*Responsividade*/
 @media (max-width: 767px) {
   main {
