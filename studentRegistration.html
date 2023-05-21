@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="styles/resgister.css" />
 
     <script src="src/js/verificationPassword.js" defer type="module"></script>
+    <script src="src/js/viewPassword.js" defer></script>
     <title>cadastro de estudante</title>
   </head>
   <body>
@@ -35,25 +36,36 @@
         <br />
         <!-- RM do Estudante -->
         <label for="rmStudent">Rm:</label>
-        <input type="number" name="rmStudent" id="rmStudent" required />
+        <input type="number" name="rmStudent" id="rmStudent" maxlength="5" />
         <br />
         <!-- senha do estudante -->
-        <label for="passwordStudent">Senha:</label>
+        <label for="passwordStudent"
+          >Senha:
+          <img src="src/assets/imgs/olho.png" alt="olho" id="viewPassword"
+        /></label>
         <input
           type="password"
           name="passwordStudent"
           id="passwordStudent"
+          placeholder="Mínimo 8 caracteres"
+          class="viewPassword"
           required
         />
         <br />
 
-        <label for="confimationPasswordStudent">Confirmar Senha:</label>
+        <label for="confimationPasswordStudent"
+          >Confirmar Senha:
+          <img src="src/assets/imgs/olho.png" alt="olho" id="viewPassword2"
+        /></label>
         <input
           type="password"
           name="confimationPasswordStudent"
-          id="confimationpasswordStudent"
+          id="confimationPasswordStudent"
+          placeholder="Mínimo 8 caracteres"
+          class="viewPassword"
           required
         />
+
         <br />
         <!-- Botão do cadastro -->
         <span class="buttons">
